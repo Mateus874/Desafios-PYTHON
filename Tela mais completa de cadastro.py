@@ -9,7 +9,9 @@ class TelaPython:
             [sg.Text("Quais provedores de email são aceitos?")],
             [sg.Checkbox("Gmail", key="Gmail"),sg.Checkbox('Outlook', key="Outlook"),sg.Checkbox('Yahoo', key="Yahoo")],
             [sg.Button('Enviar')],
-            [sg.Output(size=(30,20))]]
+            [sg.Output(size=(30,20))]
+            [sg.Slider()]
+        ]
 
         # Janela
         self.janela = sg.Window("Dados do usuário", self.layout)
